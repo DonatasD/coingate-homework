@@ -5,6 +5,7 @@ Design document describing possible transition from monolithic application that
 High level architecture diagram for current architecture. From provided description currently system integrates with multiple
 exchanges. This integration triggers creation of a database record and such entry processing in the background within
 application.
+
 ![current-system.drawio.png](current-system.drawio.png)
 
 ## Transition
@@ -30,6 +31,7 @@ exchange orders, by removing persistence logic for exchange order.
 ### Final Step
 Implement integration with exchanges to handle exchange orders. Deprecate/remove monolith integrations that handles exchange
 orders.
+
 ![transition-final.drawio.png](transition-final.drawio.png)
 
 ## Microservice Design
